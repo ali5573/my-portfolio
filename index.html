@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <nav>
+        <h2 id="logo">ALI CHAHBOUNE</h2>
+        <ul class="navigation-items">
+            <li class="navigation-item"><a href="#about-me">About Me</a></li>
+            <li class="navigation-item"><a href="#projects">Projects</a></li>
+            <li class="navigation-item"><a href="#skills">Skills</a></li>
+            <li class="navigation-item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about-me">
+            <div class="about-me-container">
+                <div class="about-me-text">
+                    <h2>About Me</h2>
+                    <p>
+                        Hi! I'm Ali, mathematics teacher and a web developper, based on Rabat Morocco welcome to my
+                        website !
+                    </p>
+                    <p>
+                        In my free time I like to read about scientific developments, mathematics, and computational
+                        mathematics. I also like to take my chances of winning big.
+                    </p>
+                    <p>
+                        Fun fact! I've been programing for
+                        <span id="time-container">0</span> seconds!
+                      </p>
+                </div>
+                <img class="my-pic" src="DSC_8357 copy (1).jpg">
+
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+            <li><a href="C:/Users/alima/OneDrive/projects/flexbox-business-site-starting/index.html">flexbox-business-site-starting</a></li>
+            <li><a href="C:/Users/alima/OneDrive/projects/mixed-messages/index.html">Random Meassages</a></li>
+        </ul>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+         <div id="skills-container">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-js"></i>
+          <i class="fab fa-react"></i>
+          <i class="fab fa-java"></i>
+          <i class="fab fa-git"></i>
+          <i class="fab fa-chrome"></i>
+          <i class="fas fa-terminal"></i>
+          <i class="fas fa-universal-access"></i>
+          <i class="fab fa-npm"></i>
+          <i class="fab fa-node"></i>
+          <i class="fab fa-github"></i> <br> <br> <br><br> <br> <br>
+        </div>
+        </section>
+
+    </main>
+    <footer>Made with <i class="fa-solid fa-heart" style="color: #ff0505;"></i> in Morocco</footer>
+    <br> <br><br> <br> <br>
+</body>
+<script>
+    const timeContainer = document.getElementById("time-container");
+    const BIRTH_DAY = "01-15-2013";
+    const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
+    const intlNumberFormatter = new Intl.NumberFormat("en-US");
+
+    setInterval(() => {
+      const now = new Date();
+      const difference = Math.floor(
+        (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
+      );
+
+      timeContainer.innerText = intlNumberFormatter.format(difference);
+    }, 1000);
+  </script>
+
+</html>

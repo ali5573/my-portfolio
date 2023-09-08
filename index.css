@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Lexend+Peta&display=swap');
+html{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Lexend Peta', sans-serif;
+    margin: 0;
+    padding: 0 var(--spacing-3);
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+  }
+.navigation-items{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.navigation-item{
+    margin: 5px 10px;
+}
+.about-me-container{
+  display: flex;
+  justify-content: space-between;
+
+}
+.my-pic{
+  height:500px;
+  width: 500px;
+}
+.projects ul{
+  list-style: circle;
+}
+#skills-container{
+  display: flex;
+  justify-content: space-between;
+}
+#skills-container > * {
+  font-size: 2.5em;
+  width: 2.5em;
+  margin-top: var(--spacing-1);
+}
+footer{
+  display: flex;
+  justify-content: center;
+}
+.contact-container{
+
+  display: flex;
+  justify-content: space-between;
+font-size: 2.5em;
+width: 2.5em;
+margin-top: 2em;
+}
+.contact-container a{
+  margin-left: 1.5em;
+}
+@media only screen and (max-width: 600px) {
+  nav{
+    flex-direction: column;
+  }
+  .navigation-items{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .my-pic{
+    width: auto;
+    height: auto;
+  }
+ #skills-container{
+  flex-wrap: wrap;
+  align-content: space-between;
+ }
+
+  .about-me-container {
+    flex-direction: column;
+  }
+  
+
+}
